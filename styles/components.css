@@ -1,0 +1,32 @@
+/* Infobox
+#################################################################*/
+
+.infobox {
+  background-color: var(--background-color);
+  border-left: solid 0.2rem #d4af37;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  h3{
+    font-weight: bold;
+  }
+}
+
+/* Imagebox with Caption
+################################################################*/
+
+
+.imagebox-with-caption {
+  max-width: 500px;
+  background-color: var(--background-color);
+  display: inline-block; 
+  margin-bottom: 1rem;
+  img {           /* verhindert Lücken durch Zeilenumbruch */
+    width: 100%;
+  }
+  figcaption {
+    padding: 1rem;
+    font-size: 0.9rem;
+    line-height: 130%;
+  }
+}

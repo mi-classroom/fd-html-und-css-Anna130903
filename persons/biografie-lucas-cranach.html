@@ -4,13 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biografien von Lucas Cranach und seinen Söhnen</title>
+
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/basic.css">
+    <link rel="stylesheet" href="/styles/components.css">
+    <link rel="stylesheet" href="/styles/variables.css">
+    <link rel="stylesheet" href="/styles/fonts.css">
+    <link rel="stylesheet" href="/styles/icons.css">
   </head>
   <body>
 
     <header>
         <a href="/index.html"><img src="/assets/images/cda-logo.svg" alt="cda-logo" width="100" height="30"></a> 
         <nav>
-          <h3>Allgemeines</h3> //
+          <h3>Allgemeines</h3> <!--Vllt auch mit Strong (und auch im Footer)-->
           <ul>
             <li><a href="#">Alle Werke</a></li>
             <li><a href="#">Gemälde</a></li>
@@ -35,24 +42,24 @@
 
 
     <main>
+
       <aside>
-      <nav>
-        <h2>Inhalt</h2>
+        <nav>
+          <h2>Inhalt</h2>
           <ul>
             <li><a href="#lucasaeltere">Lucas Cranach der Ältere</a></li>
             <li><a href="#hans">Hans Cranach</a></li>
             <li><a href="#lucasjungere">Lucas Cranach der Jüngere</a></li>
           </ul>
-      </nav>
+        </nav>
       </aside>
 
 
-      
-      <h1>Biografien von Lucas Cranach und seinen Söhnen</h1>
+      <h1><span class="icon">menu</span>Biografien von Lucas Cranach und seinen Söhnen</h1>
       <article id="biografie">
         <h2>Lucas Cranach der Ältere</h2>
         
-        <section id="kurz-ueberblick-alt">
+        <div class="infobox">
           <h3>Kurzüberblick</h3>
 
           <p>
@@ -61,7 +68,7 @@
             Kurfürsten prägte er die Reformation visuell und leitete eine produktive
             Werkstatt. Seine Werke umfassen Porträts, religiöse und mythologische Szenen.
           </p>
-        </section>
+        </div>
 
           <p>
             Lucas Cranach der Ältere verkörpert die Ideale eines Mannes im Zeitalter der
@@ -115,7 +122,7 @@
             I. Cranach und Albrecht Dürer mit der Illustration seines Gebetbuches.
           </p>
           
-            <figure>
+            <figure class="imagebox-with-caption">
               <img src="/assets/images/lucas-cranach-1.jpg" alt="lucas-cranach">
               <figcaption>​Lucas Cranach der Ältere, Die Heilige Sippe, um 1509/10. Lindenholztafel. Wien, Gemäldegalerie der Akademie der bildenden Künste. Detail mit dem Selbstbildnis des Künstlers.</figcaption>
             </figure>
@@ -160,7 +167,7 @@
             aufrecht stehenden sondern mit liegenden Flügeln dargestellt.
           </p> 
         
-            <figure>
+            <figure class="imagebox-with-caption">
               <img src="/assets/images/lucas-cranach-2.jpg" alt="lucas-cranach-selbstbild">
               <figcaption>Lucas Cranach der Ältere, Selbstbildnis, 1531. Holztafel. Schloss Stolzenfels. Detail</figcaption>
             </figure>
@@ -269,7 +276,7 @@
 
       <article id="hans">
         <h2>Hans Cranach</h2>
-        <figure>
+        <figure class="imagebox-with-caption">
           <img src="/assets/images/hans-cranach.jpg" alt="hans-cranach">
           <figcaption>
             <h3>Kurzüberblick</h3>
@@ -315,7 +322,7 @@
       <article  id="lucasjungere">
         <h2>Lucas Cranach der Jüngere</h2>
 
-              <figure>
+              <figure class="imagebox-with-caption">
                 <img src="/assets/images/lucas-cranach-der-juengere.jpg" alt="lucas-cranach-der-juengere">
                 <figcaption>
                   <h3>Kurzüberblick</h3>
@@ -407,12 +414,12 @@
               </dl>
         </article>
 
-            <figure>
+            <figure class="imagebox-with-caption">
               <img src="/assets/images/lucas-cranach-3.jpg" alt="lucas-cranach-stadtkirche">
               <figcaption>Lucas Cranach der Jüngere, Epitaphaltar in der Stadtkirche St. Peter und Paul in Weimar, 1555. Mitteltafel, Detail mit dem Bildnis Lucas Cranachs d. Ä.</figcaption>
             </figure>
 
-            <figure>
+            <figure class="imagebox-with-caption">
               <img src="/assets/images/lucas-cranach-der-juengere.jpg" alt="lucas-cranach-fuerst">
               <figcaption>Lucas Cranach der Jüngere, Epitaph für Fürst Joachim von Anhalt, 1565. Holztafel, St. Johannis und St. Marien, Dessau. Detail mit vermutlichem Selbstbildnis Lucas Cranachs d. J.</figcaption>
             </figure>
