@@ -21,6 +21,7 @@
   --font-size-5xl: 3rem;     /* 48px */
   
   /* Schriftstärken - basierend auf den extrahierten Werten */
+  --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700; /* Extrahiert als "bold" */

@@ -3,12 +3,12 @@
 
 .infobox {
   background-color: var(--background-color);
-  border-left: solid 0.2rem #d4af37;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  border-left: solid 0.2rem var(--color-secondary);
+  padding: var(--spacing-m);
+  margin-bottom: var(--spacing-m);
 
   h3{
-    font-weight: bold;
+    font-weight: var(--font-weight-light);
   }
 }
 
@@ -17,16 +17,49 @@
 
 
 .imagebox-with-caption {
-  max-width: 500px;
+  max-width: var(--container-s);
   background-color: var(--background-color);
   display: inline-block; 
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-m);
   img {           /* verhindert Lücken durch Zeilenumbruch */
     width: 100%;
   }
   figcaption {
-    padding: 1rem;
+    padding: var(--spacing-m);
     font-size: 0.9rem;
     line-height: 130%;
   }
+}
+
+/* Sidebar
+################################################################*/
+
+.sidebar {
+  a {
+    text-decoration: none;
+    color: var(--color-text-secondary);
+    display: inline-block;
+    width: 100%;
+  }
+
+  a:hover{
+    border-left-color: var(--color-accent)
+  }
+
+  p {
+    font-weight: var(--font-weight-light);
+  }
+  
+  ul {
+  list-style: none;
+  margin-top: var(--spacing-m);
+  margin-bottom: var(--spacing-xl);
+  border-left: 4px solid lightgray;
+    li {
+      position: relative;
+      padding: 0.5rem 1rem;
+      font-size: var(--font-size-m);
+    }
+}
+
 }
