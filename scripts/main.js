@@ -40,5 +40,24 @@ sectionHeadlines.forEach(function (headline) {
 
 /*Search
 ############################################################################### */
+const searchOpenButton = document.querySelector('[data-js-search-open]');
+const searchCloseButton = document.querySelector('[data-js-search-close]');
+
+const searchOverlay = document.querySelector('[data-js-search-target]');
 
 
+
+searchOpenButton.addEventListener('click', function(e) {
+  searchOverlay.classList.add('is-active');
+});
+
+searchCloseButton.addEventListener('click', function(e) {
+  searchOverlay.classList.remove('is-active');
+});
+
+
+searchOverlay.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const inputValue = searchOverlay.querySelector("[data-js-search-input]").value;
+  console.log(inputValue);
+});

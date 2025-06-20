@@ -126,8 +126,15 @@
   color: #fff;
   font-size: var(--font-size-l);
   height: 38px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
   &:active {
     background-color: var(--color-primary-400);
+  }
+
+  img {
+
   }
 }
