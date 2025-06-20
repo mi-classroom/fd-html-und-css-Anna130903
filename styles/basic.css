@@ -5,31 +5,76 @@ html {
 
 body {
   font-family: ibm-plex-sans, sans-serif;
-  padding: 1rem;
+  margin-top: 24px;
+  padding-left: 25px;
+  padding-right: 24px;
   color: #000;
   background-color: #fff;
   line-height: 140%;
   font-weight: var(--font-weight-light);
 }
 
-header{
-  display: none;
+main {
+  padding-bottom: 92px;
+  padding-top: 92px;
+}
+
+@media screen and (min-width: 700px) {
+  .header {
+    display: inline-block;
+    
+  }
+}
+
+dd {
+  margin-bottom: var(--spacing-s);
+  border-bottom: var(--spacing-3xs) solid lightgray;
+  padding-bottom: var(--spacing-s);
+}
+
+dt {
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
 }
 
 
 
 h1 {
   font-size: 2rem;
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-light);
+  line-height: 110%;
 }
 
 h2 {
   font-weight: var(--font-weight-light);
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-xl);
   line-height: 120%;
+  margin-top: var(--spacing-4xl);
+}
+
+h3{
+  font-weight: var(--font-weight-regular);
 }
 
 p, h1, h2, h3, h4 {
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-xl);
 }
+
+
+header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  img {
+    width: var(--spacing-xl);
+    height: auto;
+  }
+
+  img:first-of-type{ /*wählt das erste Bild (<img>-Element) innerhalb eines <header>-Elements aus, das innerhalb seines übergeordneten Elements das erste seiner Art ist*/
+    margin-left: auto;
+  }
+}
+
+
 

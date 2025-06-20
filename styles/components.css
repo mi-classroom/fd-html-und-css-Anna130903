@@ -2,13 +2,22 @@
 #################################################################*/
 
 .infobox {
-  background-color: var(--background-color);
-  border-left: solid 0.2rem var(--color-secondary);
+  position: relative;
+  background-color: var(--color-background-200);
+  border-left: 0.2rem solid var(--color-primary-default);
   padding: var(--spacing-m);
   margin-bottom: var(--spacing-m);
 
-  h3{
-    font-weight: var(--font-weight-light);
+  ul {
+    list-style-type: disc;
+    /* Punkt als Aufzählungszeichen */
+    padding-left: 1.5rem;
+    /* Platz für die Punkte */
+    margin: 0.5rem 0 0 0;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -18,16 +27,25 @@
 
 .imagebox-with-caption {
   max-width: var(--container-s);
-  background-color: var(--background-color);
-  display: inline-block; 
+  background-color: var(--color-background-200);
+  display: flex;
+  flex-direction: column;
   margin-bottom: var(--spacing-m);
-  img {           /* verhindert Lücken durch Zeilenumbruch */
+
+  img {
     width: 100%;
   }
+
   figcaption {
     padding: var(--spacing-m);
     font-size: 0.9rem;
     line-height: 130%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .imagebox-with-caption {
+    display: inline-block;
   }
 }
 
@@ -42,24 +60,33 @@
     width: 100%;
   }
 
-  a:hover{
+  a:hover {
     border-left-color: var(--color-accent)
   }
 
   p {
     font-weight: var(--font-weight-light);
   }
-  
+
   ul {
-  list-style: none;
-  margin-top: var(--spacing-m);
-  margin-bottom: var(--spacing-xl);
-  border-left: 4px solid lightgray;
+    list-style: none;
+    margin-top: var(--spacing-m);
+    margin-bottom: var(--spacing-xl);
+    border-left: 4px solid lightgray;
+
     li {
       position: relative;
       padding: 0.5rem 1rem;
       font-size: var(--font-size-m);
     }
+  }
 }
 
+.main-navigation {
+  display: none;
+}
+
+.logo {
+  width: 88px;
+  height: 30px;
 }
