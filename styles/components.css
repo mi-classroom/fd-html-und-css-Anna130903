@@ -10,9 +10,7 @@
 
   ul {
     list-style-type: disc;
-    /* Punkt als Aufzählungszeichen */
     padding-left: 1.5rem;
-    /* Platz für die Punkte */
     margin: 0.5rem 0 0 0;
   }
 
@@ -25,21 +23,19 @@
 ################################################################*/
 
 
-.imagebox-with-caption {
-  max-width: var(--container-s);
-  background-color: var(--color-background-200);
-  display: flex;
-  flex-direction: column;
-  margin-bottom: var(--spacing-m);
+.image-with-caption {
 
   img {
     width: 100%;
+    display: block;
   }
 
   figcaption {
+    background-color: var(--color-background-200);
     padding: var(--spacing-m);
-    font-size: 0.9rem;
-    line-height: 130%;
+    font-size: var(--font-size-s);
+    line-height: var(--line-height-tight);
+    margin-bottom: var(--spacing-xl);
   }
 }
 
@@ -49,6 +45,44 @@
   }
 }
 
+/* TOC
+############################################################################# */
+
+.toc {
+
+  h2 {
+    font-size: var(--font-size-xl);
+
+  }
+
+  ul {
+    margin-top: var(--spacing-m);
+    margin-bottom: var(--spacing-xl);
+
+    li {
+      padding: var(--spacing-2xs);
+
+      margin: 0;
+      border-left: var(--border-width-m) solid var(--color-primary-300);
+      padding-left: var(--spacing-s);
+
+      a {
+        color: var(--color-text-default);
+        text-decoration: none;
+        opacity: 0.6;
+
+      }
+
+      &:hover {
+        border-left-color: var(--color-primary-default);
+
+        a {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
 /* Sidebar
 ################################################################*/
 
