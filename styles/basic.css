@@ -14,12 +14,6 @@ body {
   font-weight: var(--font-weight-light);
 }
 
-main {
-  padding-bottom: 92px;
-  padding-top: 92px;
-}
-
-
 dd {
   margin-bottom: var(--spacing-s);
   border-bottom: var(--spacing-3xs) solid lightgray;
@@ -50,9 +44,62 @@ h3{
   font-weight: var(--font-weight-regular);
 }
 
-p, h1, h2, h3, h4 {
-  margin-bottom: var(--spacing-xl);
+img {
+  width: 100%;
+  display: block;
 }
+
+p,
+h3,
+h4,
+dd,
+li,
+figure {
+  margin-bottom: var(--spacing-m);
+}
+
+p,
+dd,
+li,
+figcaption {
+  hyphens: auto;
+}
+
+main, header{
+  max-width: 40rem;
+  margin: auto;
+}
+
+@media screen and (min-width: 700px){
+  main{
+    display: grid;
+    grid-template-columns: 33.3% 1fr;
+    gap: 100px;
+
+  }
+}
+
+
+/*
+@media screen and (min-width: 700px)  {
+  main {
+    display: flex;
+  }
+
+  .toc {
+    width: 33.3%;
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  .main-content {
+    width: 66.6%;
+  }
+}
+
+*/
 
 
 

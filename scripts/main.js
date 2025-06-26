@@ -17,7 +17,7 @@ menuCloseButton.addEventListener('click', function() {
 /* On Page Navigation
 ############################################################################ */
 
-const sectionHeadlines = document.querySelectorAll("[data-js-page-navigation-content] > section > h2");
+const sectionHeadlines = document.querySelectorAll("[data-js-page-content] > section > h2");
 const pageNavigation = document.querySelector('[data-js-page-navigation-menu]');
 
 sectionHeadlines.forEach(function (headline) {
