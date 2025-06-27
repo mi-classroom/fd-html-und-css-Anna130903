@@ -1,17 +1,15 @@
 /* Infobox
-#################################################################*/
+################################################################# */
 
 .infobox {
-  position: relative;
-  background-color: var(--color-background-200);
-  border-left: 0.2rem solid var(--color-primary-default);
   padding: var(--spacing-m);
-  margin-bottom: var(--spacing-m);
+  border-left: 0.2rem solid var(--color-primary-default);
+  background-color: var(--color-background-200);
 
   ul {
-    list-style-type: disc;
     padding-left: 1.5rem;
-    margin: 0.5rem 0 0 0;
+    margin: 0.5rem 0 0;
+    list-style-type: disc;
   }
 
   li {
@@ -19,37 +17,33 @@
   }
 }
 
-/* Imagebox with Caption
-################################################################*/
 
+
+
+/* Imagebox with Caption
+################################################################ */
 
 .image-with-caption {
-
   img {
-    width: 100%;
-    display: block;
+    display: flex;
+    flex: 1 0 0;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   figcaption {
-    background-color: var(--color-background-200);
     padding: var(--spacing-m);
+    background-color: var(--color-background-200);
     font-size: var(--font-size-s);
     line-height: var(--line-height-tight);
-    margin-bottom: var(--spacing-xl);
   }
 }
 
-@media screen and (min-width: 700px) {
-  .imagebox-with-caption {
-    display: inline-block;
-  }
-}
 
-/* TOC
+/* TOC - Sidebar
 ############################################################################# */
 
 .toc {
-
   h2 {
     font-size: var(--font-size-xl);
   }
@@ -60,15 +54,14 @@
 
     li {
       padding: var(--spacing-2xs);
-
-      margin: 0;
-      border-left: var(--border-width-m) solid var( --color-background-200);
       padding-left: var(--spacing-s);
+      border-left: var(--border-width-m) solid var(--color-background-200);
+      margin: 0;
 
       a {
         color: var(--color-text-default);
-        text-decoration: none;
         opacity: 0.6;
+        text-decoration: none;
 
       }
 
@@ -82,54 +75,65 @@
     }
   }
 }
-/* Sidebar
-################################################################*/
 
-.sidebar {
-  a {
-    text-decoration: none;
-    color: var(--color-text-secondary);
-    display: inline-block;
-    width: 100%;
-  }
 
-  a:hover {
-    border-left-color: var(--color-accent)
-  }
+/* Button
+###################################################### */
+.button {
+  display: flex;
+  height: 38px;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 var(--spacing-xs);
+  border: none;
+  background-color: var(--color-primary-default);
+  color: #fff;
+  font-size: var(--font-size-l);
 
-  p {
-    font-weight: var(--font-weight-light);
-  }
-
-  ul {
-    list-style: none;
-    margin-top: var(--spacing-m);
-    margin-bottom: var(--spacing-xl);
-    border-left: 4px solid lightgray;
-
-    li {
-      position: relative;
-      padding: 0.5rem 1rem;
-      font-size: var(--font-size-m);
-    }
+  &:active {
+    background-color: var(--color-primary-400);
   }
 }
 
 
-/* Button
-######################################################*/
-.button {
-  background-color: var(--color-primary-default);
-  padding: 0 var(--spacing-xs);
-  border: none;
-  color: #fff;
-  font-size: var(--font-size-l);
-  height: 38px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 
-  &:active {
-    background-color: var(--color-primary-400);
+
+/* Image with caption flex
+###################################################### */
+@media screen and (width >=700px) {
+  .image-flex {
+    display: flex;
+    align-items: flex-start;
+
+    img {
+      max-width: 182px;
+      height: auto;
+      flex-shrink: 0;
+    }
+
+    figcaption {
+      h3 {
+        margin-bottom: 10px;
+      }
+    }
+
+    .infobox {
+      max-height: 150px;
+      flex-grow: 1;
+      flex-shrink: 1;
+      align-content: stretch;
+    }
+
+  }
+}
+
+
+/* Image next to each other
+###################################################### */
+@media screen and (width >=700px) {
+  .images-next-to-each-other {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 }

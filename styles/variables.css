@@ -30,10 +30,10 @@
   --color-primary-400: #FFC450;
   --color-primary-default: #FEB701;
   --color-seconadary-default: #CC5800;
-
-  --color-background-default: #FFFFFF;
+  --color-background-default: #FFF;
   --color-background-200: #F2F2F2;
-  --color-text-default: #000000;
+  --color-background-footer: #222222;
+  --color-text-default: #000;
 
   
   /* spaces */
@@ -66,5 +66,7 @@
   --break-point-s: 768px;
   --break-point-m: 1024px;
   --breapoint-l: 1200px;
+
+  --c-spacing-m: 25px;
 } 
   
